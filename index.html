@@ -7,6 +7,7 @@
     <title>Telecar2.0</title>
 </head>
 <body>
+    <script src="./main.js"></script>
     <header>
             <nav class="logo_telecar">
                 <img src="./img/LOGO_NUEVO_TELECAR-removebg-preview-e1703177227514.png" alt="Nuevo logo Telecar">
@@ -14,14 +15,31 @@
         <button class="botom_wpp">
             <img src="./img/phone.png" alt="">
             <div class="banner_wpp">
-              <p>Whatsapp</p>
-              <p>3125202326</p>  
+              <p>Envios a todo el pais
+              </p>
+              <p>319606961</p>  
             </div>
         </button>
-        <div class="nav_mobile">
+        <div onclick="openMenuMobile()" class="nav_mobile">
             <img src="./img/nav_icon.png" alt="Navegador Mobile">
         </div>
     </header>
+    <section>
+        <div class="nav_pc" id="nav_pc">
+            <div  class="box_closet">
+                <p onclick="closetMenuMobile()"><img src="./img/chevron.png" alt="">CERRAR</p>
+            </div>
+            <ul>
+                <li>Inicio</li>
+                <li>Radios portatiles</li>
+                <li>Base Moviles</li>
+                <li>Repetidores</li>
+                <li>Accesorios</li>
+                <li>Servicio tecnico</li>
+                <li>Nosotros</li>
+            </ul>
+        </div>
+    </section>
     <footer></footer>
 </body>
 </html>

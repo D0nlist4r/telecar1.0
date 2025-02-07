@@ -2,7 +2,7 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
 }
 header{
     display:flex;
@@ -13,6 +13,7 @@ header{
     border-bottom: 1px black solid;
 }
 .nav_mobile{
+    cursor: pointer;
     display: flex;
     justify-content: center;
 }
@@ -27,7 +28,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 10rem;
+    width: 11rem;
     color: white;
     background-color: #075e54;
     border-radius: 10px ;
@@ -43,4 +44,58 @@ header{
 }
 .botom_wpp p{
     font-size: 0.8rem;
+    padding-bottom: 3px;
+}
+.nav_pc{
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    background-color: #eeeeee;
+    width: 100vw;
+    height: 100vh;
+}
+.nav_pc ul{
+    margin-left: 5px;
+    top: 200px;
+    list-style: none;
+    padding: 0px;
+    
+}
+.box_closet{
+    font-size: 15px;
+    height: 35px;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.box_closet p{
+    cursor: pointer;
+    font-size: 17px;
+    padding-left: 20px;
+    margin-left: 5px;
+}
+.box_closet p img{
+    margin-right: 2px;
+    width: 15px;
+    height: 15px;
+    transition: transform 0.5s ease;
+}
+.box_closet p img:hover{
+    transform: rotate(90deg);
+}
+.nav_pc ul li{
+    display: block;
+    border-bottom: 1px solid black;
+    width: 200px;
+    padding: 5px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+@media (min-width: 836px){
+
 }
