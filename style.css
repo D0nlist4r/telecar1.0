@@ -5,29 +5,42 @@
     font-family: Arial, Helvetica, sans-serif
 }
 header{
-    padding: 5px;
+    display:flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-bottom: 1px black solid;
+}
+.nav_mobile{
     display: flex;
-    border: 1px solid black;
+    justify-content: center;
 }
-.content_img{
-    width: 20%;
-    box-sizing: border-box;
-}
-.image_logo{
-    margin-left: 10px;
+.nav_mobile img{
     width: 65px;
-    height: auto;
 }
-.Encabezado{
-    font-size: 1.2rem;
-    text-align: center;
-    width: 50%;
-    margin: auto;
+
+.logo_telecar img{
+    width: 85px;
 }
-.name_image{
-    margin: 10px;
-    width: 40px;
+.botom_wpp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    color: white;
+    background-color: #075e54;
+    border-radius: 10px ;
+    border: 2px transparent; 
 }
-.contenido_nav img{
-    width: 200px;
+.botom_wpp:hover{
+    background-color: #128c7e;
+}
+.botom_wpp img{
+    margin: 0px 7px;
+    width: 30px;
+    height: 30px;
+}
+.botom_wpp p{
+    font-size: 0.8rem;
 }
