@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=425, height=800, initial-scale=1.0">
+    <title>Slider Automático</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slider-container {
+            width: 425px;
+            height: 800px;
+            position: relative;
+            overflow: hidden;
+        }
+        .slide {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            background-position: center;
+            color: rgb(138, 15, 15);
+            transition: opacity 1s ease-in-out;
+            opacity: 0;
+        }
+        .slide.active {
+            opacity: 1;
+        }
+        .slide h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .slide p {
+            font-size: 18px;
+            text-align: center;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider-container">
+        <div class="slide active" style="background-image: url('./img/home.png');">
+            <h2>Título 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="slide" style="background-image: url('./img/ico_accessories.png');">
+            <h2>Título 2</h2>
+            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="slide" style="background-image: url('./img/logo-whatsapp-png-pic-20.png');">
+            <h2>Título 3</h2>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+        </div>
+        <div class="slide" style="background-image: url('./img/home.png');">
+            <h2>Título 4</h2>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+        </div>
+    </div>
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function showNextSlide() {
+            slides[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % slides.length;
+            slides[currentIndex].classList.add('active');
+        }
+
+        setInterval(showNextSlide, 10000);
+    </script>
+</body>
+</html>

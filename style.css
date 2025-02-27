@@ -46,6 +46,7 @@ header{
     font-size: 0.8rem;
     padding-bottom: 3px;
 }
+/* Search nav mobile */
 .nav_pc{
     position: absolute;
     top: 0;
@@ -99,6 +100,7 @@ header{
 .search_box{
     align-self: center;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 .search_box label input{
     width: 300px ;
@@ -107,6 +109,7 @@ header{
     text-align: start;
     padding: 20px;
 }
+/* end nav search mobile */
 .slider_box{
     width: 100%;
     background-color: azure;
@@ -119,28 +122,40 @@ header{
     margin-right: 6px;
 }
 /* Slidermenu mobile */
-        .slider-container {
-            width: 400px;
-            height: 80px;
-            overflow: hidden;
-            position: relative;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        }
-        .slider {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-            width: 100%;
-            
-        }
-        .slide {
-            width: 100%;
-            flex: 0 0 auto;
-        }
-        .img-slider {
-            width: 50px;
-            display: block;
-        }
+.slider-container {
+    margin: 0px auto;
+    width: 80%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.slider {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    width: 100%;
+}
+.group {
+    display: flex;
+    width: 100%;
+    flex: 0 0 auto;
+    justify-content: center;
+    gap: 5px;
+
+}
+.slide {
+    width: 50px;
+    flex: 0 0 auto;
+    text-align: center;
+    background: lightgray;
+    border: 1px solid #ddd;
+}
+.slide img {
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
     /* Fooder */
     footer{
         margin-top: 10px;
@@ -165,6 +180,30 @@ header{
     .box_text img{
       width: 125px;
       margin: auto;
+    }
+    /* Search main styles */
+    .serch-main{
+        margin: 10px 0px;
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+
+    }
+    .sercha-main label{
+        width: 100%;
+    }
+    .search-box-main{
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        width: 80vw;
+        height: 35px;
+        border-radius: 20px;
+        text-align: center;
+    }
+    /* otones de nav mobile */
+    .boonav{
+        width: 200px;
+        height: 50px;
+        margin: 15px auto;
     }
 @media (min-width: 836px){
 
